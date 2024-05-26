@@ -1,0 +1,3 @@
+export const jwtConstantes = {
+    secret: 'NAO UTILIZE ESSE VALOR EM PRODUCAO. CRIAR E MANTER UMA CHAVE SEGURA FORA DO CODIGO FONTE.',
+};

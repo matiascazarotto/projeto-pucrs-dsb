@@ -1,0 +1,441 @@
+{
+	"info": {
+		"_postman_id": "8b125e19-35ee-46f2-a89a-ccaa356a74b0",
+		"name": "PUCRS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19525538"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"matias\",\r\n    \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[AUTH] Atualiza Custo Mensal Aplicativo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hdGlhcyIsImlhdCI6MTcxNjY3Nzk3NywiZXhwIjoxNzE2Njc4NTc3fQ.Nv1T34jFfaESUdr0PHKRpBmQT73rRmTCt-629Owt7aw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hdGlhcyIsImlhdCI6MTcxNjU2ODYxOSwiZXhwIjoxNzE2NTY5MjE5fQ.GCaK97-Ia5S4ZMpbII7tki2Y18JRmk6RmdPaZgBzBr4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"custoMensal\": 25.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/servcad/aplicativos/4",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"servcad",
+						"aplicativos",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[AUTH] Novo Aplicativo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hdGlhcyIsImlhdCI6MTcxNjY3Nzk3NywiZXhwIjoxNzE2Njc4NTc3fQ.Nv1T34jFfaESUdr0PHKRpBmQT73rRmTCt-629Owt7aw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hdGlhcyIsImlhdCI6MTcxNjU1OTg0MSwiZXhwIjoxNzE2NTYwNDQxfQ.NsQ2cwtQzu5HOgz1FkhmTNSR_pRTzpYmhaOSj2OmDIs"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"CloudNet\",\r\n    \"custoMensal\": 19.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/servcad/novoAplicativo",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"servcad",
+						"novoAplicativo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[AUTH] Nova Assinatura",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hdGlhcyIsImlhdCI6MTcxNjY3Nzk3NywiZXhwIjoxNzE2Njc4NTc3fQ.Nv1T34jFfaESUdr0PHKRpBmQT73rRmTCt-629Owt7aw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hdGlhcyIsImlhdCI6MTcxNjU3MTE0NCwiZXhwIjoxNzE2NTcxNzQ0fQ.Kje4hqinu_w919OrjPUkqbNt3yG7t_WJdhEwrish5RE"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codCli\": 1,\r\n    \"codApp\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/servcad/assinatura",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"servcad",
+						"assinatura"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[AUTH] Registrar Pagamento",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hdGlhcyIsImlhdCI6MTcxNjY3NTY5NiwiZXhwIjoxNzE2Njc2Mjk2fQ.O-Qnk0W2mMdPTym1peY8QZP_tLE8pzfB-9iWmtN0Q_o",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hdGlhcyIsImlhdCI6MTcxNjYwOTA0MywiZXhwIjoxNzE2NjA5NjQzfQ.XEfPNb5DRdlaHAy7nZw1aXHSE-3PeFk_XmHezn7WJaE"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dia\": 30,\r\n    \"mes\": 5,\r\n    \"ano\": 2024,\r\n    \"codAss\": 3,\r\n    \"valorPago\": 11.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/registrarpagamento",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"registrarpagamento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[AUTH] Novo Cliente",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hdGlhcyIsImlhdCI6MTcxNjY3Nzk3NywiZXhwIjoxNzE2Njc4NTc3fQ.Nv1T34jFfaESUdr0PHKRpBmQT73rRmTCt-629Owt7aw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hdGlhcyIsImlhdCI6MTcxNjUxOTU0NCwiZXhwIjoxNzE2NTIwMTQ0fQ.bZtuWjgm6lgOGKpCrVD6Xl27LQkMUYGn8LE1W7m2VpM"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"m.cazarotto@edu.pucrs.br\",\r\n    \"nome\": \"Matias\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/servcad/novoCliente",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"servcad",
+						"novoCliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Clientes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/servcad/clientes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"servcad",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Aplicativos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/servcad/aplicativos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"servcad",
+						"aplicativos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Status Assinaturas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/servcad/assinaturas/ATIVAS",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"servcad",
+						"assinaturas",
+						"ATIVAS"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assinaturas por Cliente",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/servcad/asscli/4",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"servcad",
+						"asscli",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assinatura Válida",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/assinvalidas/5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"assinvalidas",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assinaturas por Aplicativo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/servcad/assapp/4",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"servcad",
+						"assapp",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
